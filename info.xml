@@ -1,0 +1,23 @@
+<plugin name="Sample Plugin 1">
+	<directory>
+		sample_plugin_1
+	</directory>
+	<version>
+		2017.03.21
+	</version>
+	<author>
+		Kyle Ellefsen
+	</author>
+	<url>
+		https://github.com/flika-org/sample_plugin_1/archive/master.zip
+	</url>
+	<dependencies>
+		<dependency name='leastsqbound'></dependency>
+		<dependency name='matplotlib'></dependency>
+	</dependencies>
+	<menu_layout>
+		<action location="cloud_counter" function="count_clouds.gui">Count Clouds</action>
+		<action location="h_index_calculator.h_index_calc" function="calc_h_index">Calculate new h-index</action>
+		<action location="cloud_counter" function="launch_docs">Docs</action>
+	</menu_layout>
+</plugin>
