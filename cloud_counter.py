@@ -27,6 +27,13 @@ class Count_clouds(BaseProcess):
         super().__init__()
 
     def gui(self):
+        """
+       gui() needs to
+        1) begin with self.gui_reset()
+        2) append items to the self.items list
+        3) end with a call to super().gui()
+        """
+        self.gui_reset()
         if g.currentWindow is None:
             generate_random_image(500, 128)  # Normally you would not need to generate a random image when writing this function
         self.gui_reset()
